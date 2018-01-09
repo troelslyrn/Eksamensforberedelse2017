@@ -16,6 +16,6 @@ public class GetCustomer {
     public static void main(String[] args) {
         fCustomer fc = new fCustomer(Persistence.createEntityManagerFactory("ORM_JPA_PU"));
         
-        System.out.println("Get Customer: " + fc.getCustomer(1));
+        System.out.println("Get Customer: " + fc.getCustomer(7));
     }
 }

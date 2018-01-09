@@ -5,7 +5,6 @@
  */
 package jpa;
 
-import entity.Customer;
 import facade.fCustomer;
 import javax.persistence.Persistence;
 
@@ -13,10 +12,10 @@ import javax.persistence.Persistence;
  *
  * @author Anders
  */
-public class CreateCustomer {
+public class DeleteCustomer {
     public static void main(String[] args) {
         fCustomer fc = new fCustomer(Persistence.createEntityManagerFactory("ORM_JPA_PU"));
         
-        System.out.println("Create Customer: " + fc.createCustomer(new Customer("Emil", "emil@gmail.com")));
+        System.out.println("Delete Customer: " + fc.deleteCustomer(1));
     }
 }
